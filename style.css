@@ -87,7 +87,6 @@ html,body{
   width: 100%;
   position: absolute;
   bottom: 0;
-  /* background-color: red; */
   padding: 3vw;
   color: #fff;
 }
@@ -130,6 +129,86 @@ font-size: 2.5vw;
   padding-right: 1.7vw;
   
 }
+#scroll{
+  height: 40vh;
+  width: 110%;
+  /* background-color: red; */
+  padding: 1vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden ;
+}
+#container{
+  height: 100%;
+  width: 100%;
+  padding: 1vw;
+  margin-left: 140px;
+  display: inline-block;
+  animation-name: anime;
+  animation-duration: 10s; 
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+#scroll img{
+  height: 70%;
+  border-radius: 50%;
+  width: 10% ;
+  margin: 2vw;
+  object-fit: cover;
+  object-position: 30% 30%;
+}
 
 
+@keyframes anime{
+  from{
+    transform: translate(0);
+  }
+  to{
+    transform: translate(-100%);
+  }
+}
+
+
+
+
+#alphabhet{
+  font-family: sans-serif;
+  height: 11vh;
+  width: 100%;
+  display: flex;
+  /* background-color: red ; */
+  justify-content: center;
+  gap: 1vw;
+  align-items: center;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#alphabhet h5{
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 2px solid black;
+  margin-right: 2vw;
+}
+
+#alphabhet h6 {
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0.5vw 0.7vw;
+  border-radius: 50%;
+  transition: all ease 0.2s;
+  
+}
+#alphabhet h6:hover{
+  border: 1px solid black;
+  cursor: pointer;
+}
+#page2{
+  height: 100%;
+  width: 100%;
+}
 
